@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel+Decorative&family=Kalam&display=swap');
+
 html {
 	scroll-behavior: smooth;
+}
+
+body, .head h2 {
+	font-family: 'Caveat', cursive;
 }
 
 ::-webkit-scrollbar {
@@ -14,8 +20,13 @@ html {
 	box-shadow: 3px 5px rgba(255, 0, 0, 0.2)!important;
 }
 
-.ui.header {
+.head h1.ui.header {
+	font-family: 'Cinzel Decorative', cursive;
+}
+
+.ui.header, .content .header h3 {
 	text-transform: uppercase;
+	font-family: 'Kalam', cursive;
 }
 
 .member, .gallery {
