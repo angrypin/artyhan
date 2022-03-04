@@ -2,6 +2,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+	width: 0;
+}
+
 .head {
 	min-height: 80vh;
 	display: flex;
@@ -14,5 +18,9 @@ html {
 }
 
 .member {
-	margin-top: 2em;
+	margin-top: 20vh;
+}
+
+.cards {
+	margin-bottom: 2em!important;
 }
