@@ -17,10 +17,6 @@ html {
 	text-transform: uppercase;
 }
 
-.member {
+.member, .gallery {
 	margin-top: 20vh;
-}
-
-.cards {
-	margin-bottom: 2em!important;
 }
