@@ -10,6 +10,7 @@ html {
 	min-height: 80vh;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	box-shadow: 3px 5px rgba(255, 0, 0, 0.2)!important;
 }
 
