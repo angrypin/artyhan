@@ -13,8 +13,13 @@ body, .head h2, p {
 	width: 0;
 }
 
-.head {
+.ui.segment.head {
 	min-height: 80vh;
+	background-image: url(../images/bright.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 	display: flex;
 	align-items: center;
 	justify-content: center;
