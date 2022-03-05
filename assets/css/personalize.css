@@ -71,7 +71,7 @@ h1.ui.header {
 	font-size: 3rem;
 }
 
-h3.ui.header, .member h1.ui.header, .gallery h1.ui.header {
+h3.ui.header, .member h1.ui.header, .gallery h1.ui.header, .head h2 {
 	font-size: 2rem;
 }
 
