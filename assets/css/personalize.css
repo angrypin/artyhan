@@ -4,8 +4,9 @@ html {
 	scroll-behavior: smooth;
 }
 
-body, .head h2 {
+body, .head h2, p {
 	font-family: 'Caveat', cursive;
+	font-size: 1.5rem;
 }
 
 ::-webkit-scrollbar {
@@ -24,6 +25,14 @@ body, .head h2 {
 	font-family: 'Cinzel Decorative', cursive;
 }
 
+h1.ui.header {
+	font-size: 3rem;
+}
+
+h3.ui.header {
+	font-size: 2rem;
+}
+
 .ui.header, .content .header h3 {
 	text-transform: uppercase;
 	font-family: 'Kalam', cursive;
@@ -31,4 +40,8 @@ body, .head h2 {
 
 .member, .gallery {
 	margin-top: 20vh;
+}
+
+.ui.footer {
+	border-radius: 0;
 }
