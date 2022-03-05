@@ -4,6 +4,7 @@
 	--accent: #faca0d;
 	--bghover: rgba(250, 202, 13, .6);
 	--bgcolor: #fff;
+	--bgimg: url(../images/light.jpg);
 }
 
 html {
@@ -24,7 +25,7 @@ body, .head h2, p {
 }
 
 .theme-changer {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	right: 0;
 	z-index: 1;
@@ -42,7 +43,7 @@ body, .head h2, p {
 
 .ui.segment.head {
 	min-height: 80vh;
-	background-image: url(../images/light.jpg);
+	background-image: var(--bgimg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -56,9 +57,9 @@ body, .head h2, p {
 	font-family: 'Cinzel Decorative', cursive;
 	text-shadow:
 		0 0 1px var(--accent), 0 0 4px var(--accent),
-		/* 0 0 9px var(--accent), 0 0 16px var(--accent), */
+		0 0 9px var(--accent), 0 0 16px var(--accent),
 		0 0 25px var(--accent), 0 0 36px var(--accent),
-		/* 0 0 49px var(--accent), 0 0 64px var(--accent), */
+		0 0 49px var(--accent), 0 0 64px var(--accent),
 		0 0 81px var(--accent), 0 0 100px var(--accent);
 }
 
@@ -70,7 +71,7 @@ h1.ui.header {
 	font-size: 3rem;
 }
 
-h3.ui.header {
+h3.ui.header, .member h1.ui.header, .gallery h1.ui.header {
 	font-size: 2rem;
 }
 

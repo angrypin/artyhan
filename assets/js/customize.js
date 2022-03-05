@@ -17,12 +17,15 @@ const colors = {
 	dark = localStorage.theme === 'dark';
 
 	$('.theme-changer').html(`<i class="${dark ? 'moon' : 'sun'} icon"></i>${theme} theme`);
-	$('.head').css('background-image', `url(assets/images/${theme}.jpg)`);
+	dark
+		? $('head').append('<link rel="stylesheet" type="text/css" href="assets/css/dark.css">')
+		: $('link[href*="dark.css"]').remove();
+	/* $('.head').css('background-image', `url(assets/images/${theme}.jpg)`);
 	
 	$(':root')
 		.css('--accent', colors.accent[theme])
 		.css('--bghover', colors.bghover[theme])
-		.css('--bgcolor', colors.bgcolor[theme]);
+		.css('--bgcolor', colors.bgcolor[theme]); */
 };
 
 $('.theme-changer').click(() => {

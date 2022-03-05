@@ -1,0 +1,30 @@
+:root {
+	--accent: #00aaff;
+	--bghover: rgba(81, 142, 161, .6);
+	--bgcolor: #1b1c1d;
+	--bgimg: url(../images/dark.jpg);
+}
+
+.member h1.ui.header, .gallery h1.ui.header {
+	color: var(--accent);
+}
+
+.ui.card, .ui.cards>.card, .ui.link.cards .card:hover, a.ui.card:hover {
+	background: #0e2d3c;
+}
+
+.content .header h3 {
+	color: #fff;
+}
+
+.ui.cards>.card .meta>a:not(.ui), .ui.cards>.card>.extra a:not(.ui) {
+	color: rgba(255, 255, 255, .7);
+}
+
+.ui.cards>.card .meta>a:not(.ui):hover {
+	color: var(--accent);
+}
+
+.ui.card>.extra, .ui.cards>.card>.extra {
+	border-top-color: var(--bghover)!important;
+}
