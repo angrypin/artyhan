@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel+Decorative&family=Kalam&display=swap');
 
+:root {
+	--accent: #faca0d;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -13,9 +17,26 @@ body, .head h2, p {
 	width: 0;
 }
 
+.theme {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+	color: #fff;
+	margin: .5rem 1rem;
+	padding: .5rem;
+	font-size: 2rem;
+}
+
+.theme:hover {
+	background-color: rgba(250, 202, 13, .6);
+	border-radius: 1ch;
+	cursor: pointer;
+}
+
 .ui.segment.head {
 	min-height: 80vh;
-	background-image: url(../images/bright.jpg);
+	background-image: url(../images/light.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
@@ -28,6 +49,16 @@ body, .head h2, p {
 
 .head h1.ui.header {
 	font-family: 'Cinzel Decorative', cursive;
+	text-shadow:
+		0 0 1px var(--accent), 0 0 4px var(--accent),
+		0 0 9px var(--accent), 0 0 16px var(--accent),
+		0 0 25px var(--accent), 0 0 36px var(--accent),
+		0 0 49px var(--accent), 0 0 64px var(--accent),
+		0 0 81px var(--accent), 0 0 100px var(--accent);
+}
+
+.head h2 {
+	text-shadow: 0 0 8px var(--accent);
 }
 
 h1.ui.header {
